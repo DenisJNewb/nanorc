@@ -26,6 +26,11 @@ _update_nanorc(){
             echo "$inc" >> "$NANORC_FILE"
         fi
     done < ~/.nano/nanorc
+    
+    echo "" >> ~/.nanorc
+    echo "set autoindent" >> ~/.nanorc
+    echo "set tabsize 2" >> ~/.nanorc
+    echo "set linenumbers" >> ~/.nanorc
 }
 
 _update_nanorc_lite(){
